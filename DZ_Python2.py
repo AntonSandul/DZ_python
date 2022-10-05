@@ -63,11 +63,14 @@
 # -> 15
 
 # from random import randint
+
 # a = int(input("Введите позицию первого элемента: "))
 # b = int(input("Введите позицию второго элемента: "))
-# N = int(input("Введите число элементов: "))
+# N = int(input("Введите число элементов: "))            
 # array = [randint(-N,N) for _ in range(N)]
 # print(array)
+# if a > N or a < - N and b > N or b < - N:
+#     print("Out of expected range!")
 # sum = array[a-1]*array[b-1]
 # print(f"Произведение чисел на позициях {a} и {b} равна {sum}")
 
