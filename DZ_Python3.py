@@ -133,21 +133,21 @@
 # out
 # 5 -3 2 -1 1 0 1 1 2 3 5
 
-# def fibonachi (count):
-#     array = [1, 0, 1]
-#     if count < 0:
-#         return "Ошибка"
-#     elif count == 1:
-#         print(array)
-#     else:
-#         i = 3
-#         while i <(count * 2):
-#             array.append(array[i - 1] + array[i - 2])
-#             if len(array) % 4 == 0:
-#                 array.insert(0, array[i] * - 1)
-#             else:
-#                 array.insert(0, array[i])
-#             i += 2
-#     print(array)  
-# print('Введите число')
-# fibonachi(int(input()))                        
+def fibonachi (num):
+    array = [1, 0, 1]
+    if num < 0:
+        return "Ошибка"
+    elif num == 1:
+        print(array)
+    else:
+        i = 3
+        while i <(num * 2):
+            array.append(array[i - 1] + array[i - 2])
+            if len(array) % 4 == 0:
+                array.insert(0, array[i] * - 1)
+            else:
+                array.insert(0, array[i])
+            i += 2
+    print(array)  
+print('Введите число')
+fibonachi(int(input()))                        
