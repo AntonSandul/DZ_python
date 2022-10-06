@@ -101,25 +101,25 @@
 # [9.26, 8.5, 1.14]
 # Min: 0.14, Max: 0.5. Difference: 0.36
 
-from random import uniform
+# from random import uniform
 
 
-num = int(input("Введите число: "))
-array = list()
-for i in range(num):
-    digit = round(uniform(1, 5), 2)
-    array.append(digit)
-print(array) 
-min = 1
-max = 0
-diff = 0
-for i in range(num):
-    if (array[i]%1)<min:
-        min = round((array[i]%1),2)
-    if (array[i]%1)>max:
-        max = round((array[i]%1),2) 
-diff = round((max - min),2)
-print(f'Разница между максимальным и минимальным остатком: ', diff)             
+# num = int(input("Введите число: "))
+# array = list()
+# for i in range(num):
+#     digit = round(uniform(1, 5), 2)
+#     array.append(digit)
+# print(array) 
+# min = 1
+# max = 0
+# diff = 0
+# for i in range(num):
+#     if (array[i]%1)<min:
+#         min = round((array[i]%1),2)
+#     if (array[i]%1)>max:
+#         max = round((array[i]%1),2) 
+# diff = round((max - min),2)
+# print(f'Разница между максимальным и минимальным остатком: ', diff)             
 
 # 5. ** Задайте число. Составьте список чисел Фибоначчи, 
 # в том числе для отрицательных индексов.
@@ -132,3 +132,22 @@ print(f'Разница между максимальным и минимальн
 # 5
 # out
 # 5 -3 2 -1 1 0 1 1 2 3 5
+
+# def fibonachi (count):
+#     array = [1, 0, 1]
+#     if count < 0:
+#         return "Ошибка"
+#     elif count == 1:
+#         print(array)
+#     else:
+#         i = 3
+#         while i <(count * 2):
+#             array.append(array[i - 1] + array[i - 2])
+#             if len(array) % 4 == 0:
+#                 array.insert(0, array[i] * - 1)
+#             else:
+#                 array.insert(0, array[i])
+#             i += 2
+#     print(array)  
+# print('Введите число')
+# fibonachi(int(input()))                        
