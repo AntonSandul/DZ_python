@@ -1,13 +1,11 @@
-# Формируем строку новых данных для записи, которые вводит пользователь 
-
-from writing_to_files import last_key
+from write_data import *
 
 def data_entry():
     names = []
     last_names = []      
     contact = []
     position =[]
-    des = []
+    comment = []
 
     while True:
         last_name = input("Введите фамилию или 'end' для окончания ввода: ")
@@ -21,7 +19,7 @@ def data_entry():
         position.append(position)
         names.append(name)
         contact.append(contact)
-        des.append(info)
+        comment.append(info)
 
     db = {}
     key_start = last_key()
@@ -31,9 +29,6 @@ def data_entry():
         db[key].append(last_names[i])
         db[key].append(names[i])
         db[key].append(contact[i])
-        db[key].append(des[i])
+        db[key].append(comment[i])
         
     return db
-
-    
-
